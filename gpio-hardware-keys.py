@@ -22,7 +22,7 @@ class ButtonToKeyMapper:
                             # Button is pressed for the first time
                             keyboard.press(key)
                             self.button_states[button_pin] = True
-                            print("Button pressed: " + key)
+                            # print("Button pressed: " + key)
                     else:
                         if self.button_states[button_pin]:
                             # Button is released
