@@ -1,0 +1,13 @@
+[Unit]
+Description=GPIO control for M8C
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/patch/m8c-rpi-gpio/main.py
+Restart=always
+User=root
+Group=root
+WorkingDirectory=/home/patch/m8c-rpi-gpio
+
+[Install]
+WantedBy=multi-user.target

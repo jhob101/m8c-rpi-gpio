@@ -45,8 +45,8 @@ class ButtonToKeyMapper:
 
 # Define GPIO pin to key mappings (adjust as needed)
 button_key_mappings = {
-    26: "up",  # Use the key string instead of Key.space
-    19: "right",  # Use the key string instead of Key.enter
+    26: "up",
+    19: "right",
     13: "down",
     6: "left",
     21: "a", #option
