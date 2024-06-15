@@ -29,7 +29,12 @@ See https://github.com/RowdyVoyeur/m8c-rpi4 for details on that project.
 ### Shutdown
 `listen-for-shutdown.py` and `listen-for-shutdown.sh` are used to listen for a button press to shutdown the rPi. This is intended to be used with a momentary switch connected to GPIO pin 3 and ground.
 
-Copied from https://github.com/Howchoo/pi-power-button, see instructions there for installation steps.
+Install with:
+
+```
+./m8c-rpi-gpio/script/install
+```
+
 
 ## Installation
 Install required packages at root
