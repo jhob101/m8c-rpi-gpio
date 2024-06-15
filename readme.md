@@ -34,20 +34,32 @@ Copied from https://github.com/Howchoo/pi-power-button, see instructions there f
 ## Installation
 Install required packages at root
 
-```sudo pip3 install keyboard pyalsaaudio```
+```
+sudo pip3 install keyboard pyalsaaudio
+```
 
 Copy the service file to systemd
 
-```sudo cp m8c-rpi-gpio/m8c-rpi-gpio.service /etc/systemd/system/m8c-rpi-gpio.service```
+```
+sudo cp m8c-rpi-gpio/m8c-rpi-gpio.service /etc/systemd/system/m8c-rpi-gpio.service
+```
 
 Enable and start the service
 
-```sudo systemctl daemon-reload```
+```
+sudo systemctl daemon-reload
+```
 
-```sudo systemctl enable m8c-rpi-gpio.service```
+```
+sudo systemctl enable m8c-rpi-gpio.service
+```
 
-```sudo systemctl start m8c-rpi-gpio.service```
+```
+sudo systemctl start m8c-rpi-gpio.service
+```
 
 ## Usage
 
-```sudo python3 main.py```
+```
+sudo python3 main.py
+```
