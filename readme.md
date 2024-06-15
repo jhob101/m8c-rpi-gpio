@@ -41,7 +41,7 @@ sudo pip3 install keyboard pyalsaaudio
 Copy the service file to systemd
 
 ```
-sudo cp m8c-rpi-gpio/m8c-rpi-gpio.service /etc/systemd/system/m8c-rpi-gpio.service
+sudo cp ~/m8c-rpi-gpio/m8c-rpi-gpio.service /etc/systemd/system/m8c-rpi-gpio.service
 ```
 
 Enable and start the service
