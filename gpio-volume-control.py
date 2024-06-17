@@ -12,13 +12,13 @@ GPIO.setup(VOLUME_UP_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(VOLUME_DOWN_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 # Initialize the ALSA Mixer control for the USB sound card
-mixer = alsaaudio.Mixer(control='Speaker', cardindex=1)
+mixer = alsaaudio.Mixer(control='Speaker', cardindex=0)
 
 # Define the volume step (adjust as needed)
-VOLUME_STEP = 5
+VOLUME_STEP = 2.5
 
 # Define the delay between volume increments (adjust as needed)
-INCREMENT_DELAY = 0.2  # seconds
+INCREMENT_DELAY = 0.1  # seconds
 
 def volume_up(channel):
     while not GPIO.input(VOLUME_UP_PIN):  # Continue while button is held down
