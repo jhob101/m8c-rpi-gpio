@@ -15,7 +15,7 @@ GPIO.setup(VOLUME_DOWN_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 mixer = alsaaudio.Mixer(control='Speaker', cardindex=0)
 
 # Define the volume step (adjust as needed)
-VOLUME_STEP = 2.5
+VOLUME_STEP = 3
 
 # Define the delay between volume increments (adjust as needed)
 INCREMENT_DELAY = 0.1  # seconds
@@ -44,7 +44,7 @@ try:
     # print("Volume control script is running. Press Ctrl+C to exit.")
     while True:
         time.sleep(0.05)  # Add a slight delay to reduce CPU usage
-        pass  # Keep the script running
+        #pass  # Keep the script running
 
 except KeyboardInterrupt:
     pass
