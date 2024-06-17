@@ -43,6 +43,7 @@ GPIO.add_event_detect(VOLUME_DOWN_PIN, GPIO.FALLING, callback=volume_down, bounc
 try:
     # print("Volume control script is running. Press Ctrl+C to exit.")
     while True:
+        time.sleep(0.05)  # Add a slight delay to reduce CPU usage
         pass  # Keep the script running
 
 except KeyboardInterrupt:

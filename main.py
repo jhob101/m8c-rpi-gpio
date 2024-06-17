@@ -21,9 +21,11 @@ volume_control_process = subprocess.Popen(["python3", volume_control_script])
 # Keep the main script running or perform other tasks
 try:
     while True:
-        pass  # Keep the main script running
+        time.sleep(0.01)  # Add a slight delay to reduce CPU usage
+        # pass  # Keep the main script running
 
 except KeyboardInterrupt:
     # Optionally, you can terminate the subprocesses when the main script is terminated
     hardware_keys_process.terminate()
     volume_control_process.terminate()
+    pass
