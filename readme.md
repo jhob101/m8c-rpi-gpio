@@ -1,6 +1,6 @@
 # Hardware Key Mapping via GPIO for Dirtywave m8 rPi
 ## Description
-This is a simple python script that maps the GPIO pins of a Raspberry Pi to keyboard keys for use with the Dirtywave m8 headless tracker on an rpi4.
+This is a simple python script that maps the GPIO pins of a Raspberry Pi to keyboard keys for use with the Dirtywave m8 headless tracker on a Raspberry Pi 4.
 
 See https://github.com/RowdyVoyeur/m8c-rpi4 for details on that project.
 
@@ -27,7 +27,7 @@ See https://github.com/RowdyVoyeur/m8c-rpi4 for details on that project.
 
 
 ### Shutdown
-`listen-for-shutdown.py` and `listen-for-shutdown.sh` are used to listen for a button press to shutdown the rPi. This is intended to be used with a momentary switch connected to GPIO pin 3 and ground.
+`listen-for-shutdown.py` and `listen-for-shutdown.sh` are used to listen for a button press to shut down the rPi. This is intended to be used with a momentary switch connected to GPIO pin 3 and ground.
 
 Install with:
 
